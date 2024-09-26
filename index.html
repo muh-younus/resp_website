@@ -42,27 +42,27 @@
         </div>
           
             <ul class="navbar-nav mb-2 mb-lg-0 color1">
-                <li class="nav-item"></li>
-                <a class="nav-link" href="#">Home</a>
+                <li class="nav-item hide"></li>
+                <a class="nav-link hide " href="#">Home</a>
               </li
              
 
              
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Display</a>
+              <li class="nav-item hide">
+                <a class="nav-link hide" href="#">Display</a>
               </li>
 
              
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item dropdown hide">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About Us
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Home</a></li>
-                  <li><a class="dropdown-item" href="#">About us</a></li>
-                  <li><a class="dropdown-item" href="#">Contact </a></li>
+                  <li><a class="dropdown-item" href="/about.html" target="_blank">Home</a></li>
+                  <li><a class="dropdown-item" href="">About us</a></li>
+                  <li><a class="dropdown-item" href="/about.html">Contact </a></li>
                   <li><a class="dropdown-item" href="#">Place </a></li>
                   <li><a class="dropdown-item" href="#">Detail </a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -76,12 +76,23 @@
                 </ul>
               </li>
 
-              <li class="nav-item"></li>
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item hide "></li>
+                <a class="nav-link hide" href="#">Contact</a>
               </li>
-              <li class="nav-item"></li>
-                <a class="nav-link" href="#">Help</a>
+              <li class="nav-item hide"></li>
+                <a class="nav-link hide" href="#">Help</a>
               </li>
+
+              
+
+
+            <li class="nav-item "></li>
+                <a onclick=showsider() class="nav-link" href="#"><img style="width: 20px" src="menu1.png" alt=""></a>
+              </li>
+
+
+
+            
               
             </ul>
             
@@ -89,6 +100,19 @@
             </form>
           </div>
         </div>
+
+        <ul class="sider">
+
+          <li><a href=""><img style="width: 20px;" src="cross.png" alt=""></a></li>
+
+          <li><a href="">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+
+
+        
       </nav>
 
       <div class="container-fluid">
@@ -322,6 +346,17 @@
 
         </div>
       </div>
+
+
+      <script>
+
+          function showsider(){
+
+            const sider = document.querySelector(".sider");
+            sider.style.display="flex";
+
+          }
+      </script>
    
    
   </body>

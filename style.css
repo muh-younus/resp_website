@@ -97,3 +97,37 @@
 
     display: flex;
 }
+
+
+.sider{
+
+
+    position: fixed;
+    top: 30px;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    z-index: 999;
+    background-color:blue;
+    backdrop-filter: flur(10px);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+
+}
+
+.sider a{
+
+    color: white;
+}
+
+
+@media(max-width: 1000px){
+
+    .hide{
+
+        display: none;
+    }
+}
