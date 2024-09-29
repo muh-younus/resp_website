@@ -21,3 +21,16 @@ img{
 
     background: rgb(243, 240, 240);
 }
+
+.crd{
+
+    height: 150px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.head{
+
+    align-items: center;
+    text-align: center;
+    padding-top: 30px
+}
